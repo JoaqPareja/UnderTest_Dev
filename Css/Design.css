@@ -1,0 +1,203 @@
+/* Landscape 
+@media only screen 
+  and (min-device-width: 740px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+        font-size: 5vw;
+  }*/
+  @media (min-device-width: 240px) {
+    body {font-size:1rem;} /* El font size seria realizar lo mas responsive posible para ciertos dispositivos*/
+      img {
+        width: 100%;
+        height:100%;
+        }
+        body{
+          background-size: 100%;
+         
+        }
+       
+     
+  }
+  @media (min-width: 640px)  { body {font-size:1rem;} 
+  }
+  
+@media (min-width:960px) { body {font-size:1.2rem; }  }
+@media (min-width:1100px) { body {font-size:1.2rem;}  } 
+
+html {
+    position: relative;
+   /* font-style: Open Sans;*/
+    font-family: Open Sans, Helvetica;
+    margin: 0;
+    padding:0;
+  }
+
+body {
+   color: black;
+  margin: 0;
+  padding:0;
+  background-position: center;
+  background-repeat: no-repeat;
+    background-image: url(/8655.jpg);
+     background-size: cover;
+    background-attachment:fixed;
+    display: flex;
+   flex-flow: column;
+    /*background-image: url(../Magicthegathering-logo.svg.png); */
+    /*background-position: center center;*/
+ }
+
+  
+ nav.menu{ 
+   /* si yo pongo pegado el nav al menu digo que la class menu esta asociada al elemento nav*/
+    top: 0;
+    width: 100%;
+    text-align: center; 
+    /*line-height: 50px;*/
+    letter-spacing: 3px;
+    background-color:  rgb(163, 184, 194);
+   color: rgb(15, 15, 14);
+}
+nav.menu ul{
+  
+  margin-top: 0px;
+  margin-left: 20px;
+    padding: 0px;
+    overflow: hidden;
+}
+nav.menu ul li{
+    float: left;
+   color: rgb(8, 8, 8);
+    margin: 10px;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+nav.menu a{
+    color: rgb(0, 0, 0);
+}
+nav.menu a:hover{
+    background-color: rgb(250, 245, 245);
+    border-top: 3px solid rgb(253, 253, 253);
+}
+nav p{
+    color: rgb(151, 22, 22);
+    /*background-color: transparent;*/
+    background-color: rgb(192, 118, 118);
+}
+nav p a{
+    color: rgba(175, 32, 32, 0.507);
+   /* background-color: transparent;*/
+   background-color: rgb(167, 126, 126);
+}
+
+.register{
+  text-align: end; 
+  /*line-height: 50px;*/
+  letter-spacing: 3px;
+  display: flex;
+}
+
+.register ul{
+  margin-top: 0px;
+  margin-left: 20px;
+    padding: 0px;
+    overflow: hidden;
+}
+.register ul li{
+ align-items: flex-end;
+}
+.inicio{
+    text-align: center;
+}
+.inicio h1{
+    font-size: 2em;
+}
+.inicio p{
+    word-spacing: 2px;
+}
+
+
+.secFigure {
+  width: 100%;
+ 
+}
+.secFigure picture img{ 
+  opacity: 0.7;
+  /*width: 100%;*/
+
+  width: clamp(350px, 50%, 500px);
+  /*Your container is 100% of width and your element containers take 20+20+40+10+10=100% also. Now if you zoom, there won't be any free space to expand into, 
+  so you need to specify the width of these elements.*/
+}
+
+#secArticles{
+  margin: 25px;
+  font-size: 20px;
+}
+#secArticles h1{
+  margin: 30px;
+}
+#secArticles h2{
+  margin: 30px;
+}
+#secArticles h3{
+  margin: 30px;
+}
+
+
+.classArticle { font-size: clamp(1.2rem, 1.5rem, 1.5rem);  }
+
+#articlelast{
+  font-size: clamp(1.3rem, 1.5rem, 1.5rem);
+
+
+}
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10%;
+  grid-row-gap: 11.1%; 
+  font-size: clamp(1rem, 0.8rem, 1.3rem);
+  /* position: fixed;*/
+  bottom: 0px;
+  width: 100%;
+ 
+   background-color:  rgb(163, 184, 194);
+   opacity: 0.7;
+  /* padding-left: 20px;
+   padding-right: 20px;
+Para que tu footer se quede siempre en el fondo intenta sacarlo 
+del div y asignale 
+a html las propiedades position:relative y min-height: 100%   
+*/
+}
+#copyId{
+  font-size: inherit;
+ margin-bottom: 0px;
+}
+#copyId ul{
+  color: rgb(15, 15, 14);
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+#redes2{
+  margin-right: 10px;
+  text-align:end;
+}
+#redes2 h1{
+ font-size: inherit;
+}
+#redes2 ul{
+  padding: 0px;
+  list-style-type: none;
+  overflow: hidden;
+}
+#redes2 ul li{
+  padding-left: 10px;
+  float: right;
+}
+#redes2 ul li a{
+  text-decoration: none;
+}
