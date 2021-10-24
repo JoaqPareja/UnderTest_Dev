@@ -1,0 +1,16 @@
+
+
+.conocenos{
+    position:sticky;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 10%;
+   
+}
+
+.conocenos_article{
+    font-size: clamp(1rem, 0.8rem, 1.3rem);
+}
+.conocenos-img{
+    width: clamp(300px, 50%, 500px);
+}

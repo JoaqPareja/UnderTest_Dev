@@ -105,17 +105,13 @@ nav p a{
  
 }
 .register ul{
-
-width: fit-content;
 padding: 0px;
 list-style-type: none;
 overflow: hidden;
 }
 .register ul li{
- 
   padding-left: 10px;
   float: right;
- 
 }
 .inicio{
     text-align: center;
@@ -163,7 +159,7 @@ overflow: hidden;
 }
 footer{
   width: 100%;
-  position: relative;
+  position:relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10%;
