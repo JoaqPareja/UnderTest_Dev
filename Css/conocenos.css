@@ -1,0 +1,21 @@
+
+
+.conocenos{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /*grid-column-gap: 10%;*/
+    font-size: clamp(1rem, 0.8rem, 1.3rem);
+}
+
+.conocenos_article{
+    font-size: clamp(1rem, 0.8rem, 1.3rem);
+}
+.conocenos-img{
+    width: clamp(200px, 50%, 400px);
+}
+.li-article{
+ display: none;
+}
