@@ -10,7 +10,6 @@ body {
   margin: 0;
    color: black;
   padding:0;
-  background-image: url("/imgs/8655.jpg");
   background-size: cover;
    background-position: center;
      background-attachment:fixed;
@@ -27,7 +26,8 @@ body {
    background-color:  rgb(240, 244, 247);
    color: rgb(15, 15, 14);
    position: sticky;
-  
+   font-family: "Berlin Sans FB";
+   
 }
 #navbarIMG{
   justify-content: center;
@@ -53,6 +53,7 @@ border-color: rgb(240, 244, 247);
   width: 100%;
   top: 0;
   position: sticky;
+  
 }
 .navbar ul{
   color: rgb(15, 15, 14);
@@ -60,6 +61,7 @@ border-color: rgb(240, 244, 247);
 
 }
 .navbar ul li{
+  font-size: 100px;
     float: left;
    color: rgb(8, 8, 8);
     overflow: hidden;
