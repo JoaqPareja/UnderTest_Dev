@@ -10,7 +10,7 @@ const ver = (n) => {
 const ocultar = (n) =>{
   setTimeout(() => {
   document.getElementById("article"+n).style.display="none"
-  }, 3000
+  }, 10000
   );
 }
 
