@@ -12,24 +12,37 @@
 </head>
 <body>
   <main> 
-    <div id="navbarIMG">
-      <img src="/imgs/Under Test.png" alt=""  id="icon">
-    </div>
-    <nav class="navbar">
-      
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="Conocenos.html">Conocenos</a> </li> 
-         <li><a href="#"></a>Blog</li>
-       </ul>
-    </nav> 
-  </main>
-<section class="secFigure">
+    <header class="header">
+      <nav class="navbar">
+        <div id="navbarIMG">
+          <img src="/imgs/Under Test.png" alt="img-navbarIMG"  id="icon" >
+          <a href="#index.html" class="nav-logo"></a>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html">Inicio</a>
+          </li>
+            <li class="nav-item">
+            <a href="Conocenos.html">Conocenos</a> 
+          </li> 
+            <li class="nav-item">
+             <a href="#"></a>Blog
+            </li>
+         </ul>
+         <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+      </nav> 
+    </header>  
+    </main>
+<!-- <section class="secFigure">
     <picture>
         <img src="/imgs/Under Test.png" alt="img" id="underTest" onmouseover="rotate(this)" >
     </picture>
-  </section>
-  <div>
+  </section> -->
+  <div id="MeetUs">
    <h1>Conoce a nuestro staff!</h1>
   </div>
   <section class="conocenos">
@@ -37,16 +50,19 @@
    <article class="conocenos_article">
      <ul>
        <img src="/imgs/Under Test.png" alt=""  class="conocenos-img" onclick="ver(1)" onmouseout="ocultar(1)">
-       <li id="article1" class="li-article"><p>
+       <li id="article1" class="li-article">
+         <p class='conocenosP'>
          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aspernatur illo at ullam ut et animi dolore aut impedit quibusdam! 
          Consequatur perferendis provident assumenda, nostrum odit ipsum pariatur harum libero?
-       </p></li>
+       </p>
+      </li>
      </ul>
    </article>
    <article class="conocenos_article">
     <ul>
       <img src="/imgs/Under Test.png" alt=""  class="conocenos-img" onclick="ver(2)" onmouseout="ocultar(2)">
-      <li id="article2" class="li-article"><p>
+      <li id="article2" class="li-article">
+        <p class='conocenosP'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aspernatur illo at ullam ut et animi dolore aut impedit quibusdam! 
         Consequatur perferendis provident assumenda, nostrum odit ipsum pariatur harum libero?
       </p></li>
@@ -55,7 +71,8 @@
   <article class="conocenos_article">
     <ul>
       <img src="/imgs/Under Test.png" alt="" class="conocenos-img" onclick="ver(3)" onmouseout="ocultar(3)">
-      <li id="article3" class="li-article"><p>
+      <li id="article3" class="li-article">
+        <p class='conocenosP'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aspernatur illo at ullam ut et animi dolore aut impedit quibusdam! 
         Consequatur perferendis provident assumenda, nostrum odit ipsum pariatur harum libero?
       </p></li>
@@ -64,7 +81,8 @@
   <article class="conocenos_article"> 
     <ul>
      <img src="/imgs/Under Test.png" alt="" class="conocenos-img" onclick="ver(4)" onmouseout="ocultar(4)">
-      <li id="article4" class="li-article"><p>
+      <li id="article4" class="li-article">
+        <p class='conocenosP'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aspernatur illo at ullam ut et animi dolore aut impedit quibusdam! 
         Consequatur perferendis provident assumenda, nostrum odit ipsum pariatur harum libero?
       </p></li>
@@ -73,7 +91,9 @@
   <article class="conocenos_article">
     <ul>
       <img src="/imgs/Under Test.png" alt=""  class="conocenos-img" onclick="ver(5)" onmouseout="ocultar(5)">
-      <li id="article5" class="li-article"><p>
+      
+      <li id="article5" class="li-article">
+        <p class='conocenosP'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aspernatur illo at ullam ut et animi dolore aut impedit quibusdam! 
         Consequatur perferendis provident assumenda, nostrum odit ipsum pariatur harum libero?
       </p></li>
@@ -81,25 +101,32 @@
   </article>
   <article class="conocenos_article">
     <ul>
-      <img src="/imgs/Under Test.png" alt=""  class="conocenos-img" onclick="ver(6)" onmouseout="ocultar(6)">
-      <li id="article6" class="li-article"><p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aspernatur illo at ullam ut et animi dolore aut impedit quibusdam! 
-        Consequatur perferendis provident assumenda, nostrum odit ipsum pariatur harum libero?
+      <img src="/imgs/Joaq.jpg" alt=""  class="conocenos-img" onclick="ver(6)" onmouseout="ocultar(6)">
+      <h2 onclick="ver(6)" onmouseout="ocultar(6)">Joaquin Pareja</h2>
+      <div id='botones'>
+      <input type="button" value="Conoceme!" onclick="ver(6)" onmouseout="ocultar(6)">
+      <input type='button' value="Sigueme en mi pagina personal">
+    </div>
+      <li id="article6" class="li-article">
+        <p class='conocenosP'>
+        QA Analyst, Cypress Automation developer & Web Developer.
       </p></li>
     </ul>
   </article>
 </section>
 <section id="SecRed">
-  <div id=SecRedTitle>
-  <h3>Redes Sociales</h3>
-</div>
-<div id="secRed2">
-  <a class="secRed-Img" href="#"><img src="/imgs/LinkedIn_logo_initials.png" alt="" class="RedImg" > /UnderTest-Dev</a>
-  <a class="secRed-Img" href="#"><img src="/imgs/127px-Slack_icon_2019.svg.png" alt="" class="RedImg">/UnderTest-Dev</a>
-  <a class="secRed-Img" href="#"><img src="/imgs/YouTube_icon_(2013-2017).png" alt="" class="RedImg">/UnderTest-Dev</a>
-  <a id="secRed-Img2" class="secRed-Img" href="#"><img src="/imgs/índice.png" alt="" class="RedImg">/UnderTest-Dev</a>
-   <a id="secRed-Img3"class="secRed-Img" href="#"><img src="/imgs/Spotify_icon-icons.com_66783.png" alt="" >/UnderTest-Dev</a>
-</div>  
+  <section id="SecRed">
+    <!-- <div id=SecRedTitle>
+    
+  </div> -->
+  <h2>Redes Sociales</h3>
+  <div id="secRed2">
+    <a class="secRed-Img" href="#"><img src="/imgs/LinkedIn_logo_initials.png" alt="" class="RedImg" > /UnderTest-Dev</a>
+    <a class="secRed-Img" href="#"><img src="/imgs/127px-Slack_icon_2019.svg.png" alt="" class="RedImg">/UnderTest-Dev</a>
+    <a class="secRed-Img" href="#"><img src="/imgs/YouTube_icon_(2013-2017).png" alt="" class="RedImg">/UnderTest-Dev</a>
+    <a id="secRed-Img2" class="secRed-Img" href="#"><img src="/imgs/índice.png" alt="" class="RedImg">/UnderTest-Dev</a>
+     <a id="secRed-Img3"class="secRed-Img" href="#"><img src="/imgs/Spotify_icon-icons.com_66783.png" alt="" >/UnderTest-Dev</a>
+  </div> 
 </section>
 <script src="/codigo.js"></script>
 </body>
