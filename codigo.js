@@ -8,11 +8,35 @@ const ver = (n) => {
   document.getElementById("article"+n).style.display="block"
   }
 const ocultar = (n) =>{
+  
+  document.getElementById("article"+n).style.display="none"
+  
+}
+
+const ocultar2 = (n) =>{
   setTimeout(() => {
   document.getElementById("article"+n).style.display="none"
   }, 10000
   );
 }
+
+// let x = document.getElementsByClassName("conocenos-img");
+// x.addEventListener("mouseover", functionOcultar);
+// x.addEventListener("click", functionVer);
+// x.addEventListener("mouseout", myThirdFunction);
+
+
+// function functionOcultar() {
+//   document.getElementByClassName("conocenos-img").style.display="none"
+// }
+
+// function functionVer() {
+//   document.getElementByClassName("conocenos-img").style.display="block"
+// }
+
+// function myThirdFunction() {
+//   document.getElementById("demo").innerHTML += "Moused out!<br>";
+// }
 
 
 const hamburger = document.querySelector(".hamburger");
