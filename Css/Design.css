@@ -7,7 +7,7 @@ html {
 
   }
 body {
-  background-image: url(/imgs/8655.jpg);
+  
   margin: 0;
    color: black;
   padding:0;
@@ -18,7 +18,7 @@ body {
    flex-flow: column;
  }
  main{ 
-  
+ 
    width: clamp(100%, 100%, 2000px);
    height: auto;
     top: 0;
@@ -49,13 +49,11 @@ body {
 
 .navbarIMG{
   grid-column: 2 / 2;
-
- 
 }
 
 #icon{
 
-  width: clamp(80px, 15%, 400px);
+  width: clamp(100px, 20%, 700px);
   /* left: 100px; */
   transform: translate(200%, 50%);  
  border-style: solid;
@@ -67,7 +65,7 @@ body {
    display: flex; 
   justify-content: center;
   align-items: center;
-  /* grid-column: 2 / 4; */
+  grid-column: 2 / 4; 
   color: #101010;
 }
 
@@ -104,16 +102,12 @@ body {
   background-color: #101010;
 }
 
-
-/* 
-.nav-logo {
-  font-size: 2.1rem;
+ /* .nav-logo {
+  /* width: clamp(350px, 75%, 800px);     */
+  /* font-size: 2.1rem;
   font-weight: 500;
   color: #482ff7;
-} */
-
-
-
+}  */
 #underTest{ 
   position:relative;
   opacity: 0.7;
@@ -123,11 +117,22 @@ body {
 }
 #MainSec{
   
-  text-align: center;
-  margin-top: 10%;
-  position: scroll;
-  margin-bottom: 10%;
+  background-image: url("/imgs/8655.jpg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+  /* position: scroll; */
+  height: clamp(100px, 60vw, 600px);
+  /* text-align: center; */
+  /* margin-top: 10%; */
+  /* position: relative;  */
+  
 }
+#information{
+  margin-top: 10%;
+  text-align: center; 
+}
+
 #unirse{
   
   width: 120px;
@@ -141,8 +146,14 @@ body {
   /* width: clamp(100%, 100%, 2000px);
   height: clamp(100%, 100%, 2000px); */
 /* bottom: 0; */
-  padding-bottom: clamp(5%, 50%, 25px); 
+  /* margin-top: 5%; */
+
+  padding-bottom: 100px;
+  /* margin-top: 100px; */
    background-color:  rgb(240, 244, 247);
+   width:100%;
+/* position: -webkit-sticky;*/
+bottom: 5%; 
 }
 
 #secRed2 a{
@@ -154,12 +165,15 @@ body {
   margin-bottom: 1.5rem;
 } */
 #SecRed h2{
-  
+  margin-bottom: 50px;
   text-align: center;
   width: clamp(65%, 100%, 100px);
 }
 #secRed2{
-  margin-left: 29%;
+  /* margin-left: 29%; */
+ 
+  margin-left: auto;
+  margin-right: auto;
   width: 40%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -172,45 +186,63 @@ body {
 }
 
 #secRed-Img2{
-  width: 150%;
-  text-align: end; 
+  columns: 2/ span 1;
 }
 #secRed-Img3{
-  width: 150%;
-   text-align: end; 
+  columns: 2/ span 1;
 }
 
 .secRed-Img img{
-  width:clamp(2rem, 1rem, 1.2rem);
+  width:clamp(1.5rem, 1rem, 1.2rem);
   margin-right: 15px;
 }
 
 /* Media screen section */
 
-@media only screen and  (min-width: 240px)  and (max-width: 992px){
+@media only screen and  (min-width: 240px)  and (max-width: 700px){
 
   .navbar {
     grid-template-columns: repeat(2, 1fr);
   }
-  #SecRed H2{
-    margin: auto;
-    text-align: center;
+  #MainSec{
+    height: 0%;
+  }
+
+#SecRed H2{
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 15px;
+}
+
+#SecRed{
+ /* position:sticky; */
+ /* margin-top: 40px; */
+ padding-bottom: 10%;
+ /* bottom: 0%; */
+}
+
+#secRed2{
+  width: 60%;
+  margin:auto;
+  grid-gap: 40px;
+} 
+
+
+/* #secRed-Img2{
+  width:100%;
+  text-align: left;
+}
+#secRed-Img3{
+  width:100%;
+  text-align: left;
+} */
+
+.secRed-Img{
+    width: auto;
     margin-bottom: 15px;
-    margin-top: 15px;
   }
- 
-  #secRed2{
-    margin:auto;
-    grid-gap: 20px;
-  }
-  #secRed-Img2{
-    width: 200px;
-    text-align: left;
-  }
-  #secRed-Img3{
-    width: 200px;
-    text-align: left;
-  }
+
   .nav-menu {
     position: fixed;
     left: -120%;
@@ -235,8 +267,10 @@ body {
     font-size: 2rem;
 }
 
+
 .hamburger {
-    margin-top: 10%;
+  width: auto;
+    margin-top: 20%;
     margin-left: 20%;
     display: block;
     cursor: pointer;
@@ -260,34 +294,69 @@ body {
   }
 } 
 
-@media only screen and (min-width: 320px) {
+@media only screen and (width: 320px) {
  
  
   .secRed-Img{
     width: max-content;
     margin-bottom: 20px;
   }
-  /* .nav-menu.active{
-    height: 50%;
-    
-  } */
+}
+
+
+@media  only screen and (min-width: 700px)and (max-width:1360px){
+  .nav-menu {
+    margin-left: 50%;
   }
+    /* #secRed-Img2{
+      width:100%;
+      text-align: left;
+    }
+    #secRed-Img3{
+      width:100%;
+      text-align: left;
+    } */
+    
+    
+}
+
+@media only screen and (min-width: 500px) and (max-width:600px){ 
+  .hamburger {
+    width: auto;
+      margin-top: 15%;
+   
+  }
+  
+}
+
+@media only screen and (min-width: 600px) and (max-width:700px){ 
+  .hamburger {
+    width: auto;
+      margin-top: 10%;
+   
+  }
+  
+}
+
   
   /* Media social responsive */
   
-@media screen and (min-width: 994px) and (max-width: 13059px){
- 
-  #secRed-Img2{
+/* @media screen and (min-width: 994px) and (max-width: 13059px){
+  .nav-menu {
+    margin-left: 50%;
+    
+} */
+  /* #secRed-Img2{
     width: 200px;
     text-align: left;
   }
   #secRed-Img3{
     width: 200px;
     text-align: left;
-  }
-}
+  } 
+}*/
   
-@media screen and (min-width: 1536px) and (max-width: 2000px){
+/* @media screen and (min-width: 1536px) and (max-width: 2000px){
  
   #secRed-Img2{
     margin-left: 25%; 
@@ -299,8 +368,8 @@ body {
     width: 150%;
      text-align: end; 
   }
-}
-
+} */
+/* 
 @media screen and (min-width: 2000px) and (max-width: 2500px){
  
   #secRed2{
@@ -309,7 +378,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
-  #secRed-Img2{
+  /* #secRed-Img2{
     margin-left: 25%; 
     width: 150%;
     text-align: end; 
@@ -318,18 +387,18 @@ body {
      margin-left: 25%; 
     width: 150%;
      text-align: end; 
-  }
-}
+  } 
+} */
 
-@media only screen and  (max-width: 804px){
+/* @media only screen and  (max-width: 804px){
   #secRed2{
     width:50%;
     gap: 20px;
   }
   
-}
+} */
 
-@media  only screen and (min-width:480px) and (max-width: 634px){
+/* @media  only screen and (min-width:480px) and (max-width: 634px){
   #secRed2{
     width:65%;
   
@@ -337,4 +406,4 @@ body {
   
 }
   
-
+ */
