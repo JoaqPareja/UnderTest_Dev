@@ -120,7 +120,7 @@ body {
 }
 #SecRed{
 
-   width:auto;
+   width:100%;
 }
 
 #secRed2 a{
@@ -163,7 +163,7 @@ body {
 }
 
 .secRed-Img{
-  width: clamp(350px, 75%, 800px);
+  width: clamp(160px, 10%, 100px);
 }
 
 .secRed-Img img{
@@ -296,6 +296,7 @@ body {
   .nav-menu {
     margin-left: 50%;
   }
+
 
 }
 
