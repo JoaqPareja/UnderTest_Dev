@@ -9,7 +9,7 @@ html {
 body {
   
   margin: 0;
-   color: black;
+  background-color:  rgb(240, 244, 247);
   padding:0;
   background-size: cover;
    background-position: center;
@@ -116,13 +116,13 @@ body {
   border-radius: 3.75em;
 }
 #MainSec{
-  
+ 
   background-image: url("/imgs/8655.jpg");
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   background-position: center;
   /* position: scroll; */
-  height: clamp(100px, 60vw, 600px);
+  /* height: clamp(100px, 60vh, 600px); */
   /* text-align: center; */
   /* margin-top: 10%; */
   /* position: relative;  */
@@ -131,6 +131,7 @@ body {
 #information{
   margin-top: 10%;
   text-align: center; 
+  margin-bottom: 10%;
 }
 
 #unirse{
@@ -147,13 +148,13 @@ body {
   height: clamp(100%, 100%, 2000px); */
 /* bottom: 0; */
   /* margin-top: 5%; */
-
-  padding-bottom: 100px;
+  
+   /* padding-bottom: 50px;  */
   /* margin-top: 100px; */
-   background-color:  rgb(240, 244, 247);
-   width:100%;
+   /* background-color:  rgb(240, 244, 247); */
+   width:auto;
 /* position: -webkit-sticky;*/
-bottom: 5%; 
+/* bottom: 10%;  */
 }
 
 #secRed2 a{
@@ -176,30 +177,56 @@ bottom: 5%;
   margin-right: auto;
   width: 40%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-template-rows: 1fr;
-  grid-gap: 80px;
-  text-align: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 10px);
+  grid-gap: 6rem;
+  /* height: 250px; */
+  /* display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  /* this is the same as grid-template-rows: 300px 300px; */
+  /* grid-template-rows: repeat(2fr); */ 
+  /* grid-template-rows: 1fr; */
+  /* grid-gap: 80px; */
+  /* text-align: center;
   justify-content: center;
-  align-content: center;
+  align-content: center; */
+  font-size: clamp(1.1rem, 0.7153rem + 1.6368vw, 1.5rem);
+}
+/* .RedImg{
+  /* width:100%; 
+  padding-right: 50px;
+} */
+
+#secRed-Img2{
+  margin-left: 80%;
+  grid-column:  1;
+  grid-row:  2;
+  
+}
+#secRed-Img3{
+  margin-left: 80%;
+   /* margin-left: 20px;  */
+   grid-column:  2;
+   grid-row: 2;
   
 }
 
-#secRed-Img2{
-  columns: 2/ span 1;
-}
-#secRed-Img3{
-  columns: 2/ span 1;
+.secRed-Img{
+  width: clamp(350px, 75%, 800px);
 }
 
 .secRed-Img img{
   width:clamp(1.5rem, 1rem, 1.2rem);
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 /* Media screen section */
 
 @media only screen and  (min-width: 240px)  and (max-width: 700px){
+
+
+
 
   .navbar {
     grid-template-columns: repeat(2, 1fr);
@@ -208,42 +235,62 @@ bottom: 5%;
     height: 0%;
   }
 
+  #information{
+    margin-bottom: 20%;
+  }
+
 #SecRed H2{
   margin: auto;
   text-align: center;
-  margin-bottom: 10%;
-  margin-top: 15px;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 #SecRed{
- /* position:sticky; */
+ position:sticky; 
  /* margin-top: 40px; */
- padding-bottom: 10%;
+ padding-bottom: 20%;
  /* bottom: 0%; */
 }
 
 #secRed2{
-  width: 60%;
-  margin:auto;
-  grid-gap: 40px;
+  /* margin-left: 29%; */
+  
+  /* width: 10%; */
+ 
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 60px;
+  text-align: left;
+  justify-content: left;
+  align-content: left;
 } 
 
 
-/* #secRed-Img2{
-  width:100%;
-  text-align: left;
+#secRed-Img2{
+  width:auto;
+ 
+  margin: 0px;
+  grid-column:  auto;
+  grid-row: auto;
 }
 #secRed-Img3{
-  width:100%;
-  text-align: left;
-} */
+  width:auto;
 
-.secRed-Img{
+  margin: 0px;
+  grid-column:  auto;
+  grid-row: auto;
+}  
+
+/* .secRed-Img{
     width: auto;
     margin-bottom: 15px;
-  }
+  } */
 
   .nav-menu {
+   
     position: fixed;
     left: -120%;
     top: 4.1rem;
@@ -265,7 +312,9 @@ bottom: 5%;
 .nav-item {
     margin: 1.5rem 0;
     font-size: 2rem;
-}
+    /* margin-left: 10px; */
+    margin-right: 150px;
+  }
 
 
 .hamburger {
@@ -296,11 +345,16 @@ bottom: 5%;
 
 @media only screen and (width: 320px) {
  
- 
+ /* Iphone5/sE**/
   .secRed-Img{
     width: max-content;
     margin-bottom: 20px;
   }
+  .nav-item {
+    
+    margin-right: 80px;
+  }
+
 }
 
 
@@ -326,6 +380,20 @@ bottom: 5%;
       margin-top: 15%;
    
   }
+  .nav-item {
+    
+    margin-right: 80px;
+  }
+  
+#secRed2{
+  /* margin-left: 29%; */
+  
+  /* width: 10%; */
+ 
+  width: 25%;
+  
+} 
+
   
 }
 
@@ -335,6 +403,18 @@ bottom: 5%;
       margin-top: 10%;
    
   }
+  .nav-item {
+    
+    margin-right: 80px;
+  }
+  #secRed2{
+    /* margin-left: 29%; */
+    
+    /* width: 10%; */
+   
+    width: 23%;
+    
+  } 
   
 }
 
